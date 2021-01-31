@@ -6,6 +6,7 @@ DEF_OPTS = -full64
 VERDI_OPTS = -kdb -debug_access+all -lca
 
 com : *.sv
+	mkdir -p simworklib
 	$(COM) $(VERDI_OPTS) $(SRC_FILE) $(DEF_OPTS) &
 
 sim : simv
